@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TraceHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+    <div class="logo">
+        <h1>TraceHub</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lost.html">Lost</a>
+        <a href="found.html">Found</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<!-- CONTACT SECTION (UPDATED) -->
+
+<section class="contact-new">
+
+    <h2>Need Help?</h2>
+    <p class="contact-sub">
+        Have any issue regarding lost or found items?  
+        Send us your message and we’ll get back to you quickly.
+    </p>
+
+    <div class="contact-form-box">
+
+        <input type="text" placeholder="Your Full Name" id="contactName">
+        <input type="email" placeholder="Your Email Address" id="contactEmail">
+        <input type="text" placeholder="Your Phone Number" id="contactPhone">
+
+        <select id="contactSubject">
+            <option>Select Subject</option>
+            <option>Lost Item</option>
+            <option>Found Item</option>
+            <option>General Help</option>
+        </select>
+
+        <textarea placeholder="Write your message here..." id="contactMessage"></textarea>
+
+        <button onclick="sendMessage()">Send Message</button>
+
+        <div id="contactOutput" class="output-box"></div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>© 2026 TraceHub | Smart Lost & Found Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

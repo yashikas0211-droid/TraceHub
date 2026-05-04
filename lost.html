@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Item | TraceHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h1>TraceHub</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lost.html">Lost</a>
+        <a href="found.html">Found</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+<!-- LOST ITEM SECTION -->
+
+<section class="lost-section">
+
+    <!-- LEFT SIDE -->
+
+    <div class="lost-left">
+        <h2>Report Lost Item</h2>
+        <p>
+            Fill in the details of your lost item so others can help
+            you find it quickly and safely through TraceHub.
+        </p>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+
+    <div class="lost-form-box">
+
+        <h3>Lost Item Form</h3>
+
+        <input type="text" id="itemName" placeholder="Item Name">
+
+        <input type="text" id="itemLocation" placeholder="Lost Location">
+
+        <input type="date" id="itemDate">
+
+        <textarea id="itemDescription" placeholder="Item Description"></textarea>
+
+        <input type="text" id="contactInfo" placeholder="Contact Number">
+
+        <button onclick="submitLostItem()">Submit Report</button>
+
+        <div id="lostOutput" class="output-box">
+            Your lost item report will appear here.
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TraceHub | Smart Lost & Found Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

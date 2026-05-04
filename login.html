@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TraceHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h1>TraceHub</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lost.html">Lost</a>
+        <a href="found.html">Found</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+<!-- LOGIN PAGE SECTION -->
+
+<section class="auth-section">
+
+    <!-- LEFT SIDE -->
+
+    <div class="auth-left">
+
+        <h2>Welcome Back</h2>
+
+        <p>
+            Access your lost & found reports,
+            track submitted items, and stay connected
+            with TraceHub services.
+        </p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="auth-right">
+
+        <!-- LOGIN BOX -->
+
+        <div class="auth-box">
+            <h3>Login</h3>
+
+            <input type="text" id="loginUser" placeholder="Enter Username">
+
+            <input type="password" id="loginPass" placeholder="Enter Password">
+
+            <button onclick="loginUser()">Login</button>
+        </div>
+
+        <!-- SIGN UP BOX -->
+
+        <div class="auth-box">
+            <h3>Sign Up</h3>
+
+            <input type="text" id="signupUser" placeholder="Create Username">
+
+            <input type="email" id="signupEmail" placeholder="Enter Email">
+
+            <input type="password" id="signupPass" placeholder="Create Password">
+
+            <button onclick="signupUser()">Sign Up</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TraceHub | Smart Lost & Found Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
